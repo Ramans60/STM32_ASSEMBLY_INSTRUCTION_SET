@@ -1,9 +1,9 @@
 
-  /*MOVE A VALUE OF 5 IN R0 FROM USER INPUT*/
-  MOV R0, #5
-  /*MOVE A VALUE OF 10 IN R1 FROM USER INPUT*/
-  MOV R1, #10
-  LOOP1:
-  b LOOP1
+ /*Load a value of 10 in R0*/
+ LDRB R0, = 10 //LDR - Means Loader , B - Means unsigned int
 
+ /*Move a value of 5 in R1*/
+ MOV R1, #5
 
+ /*Add The value of R0 and R1 then store in R2*/
+ ADD R2, R0, R1
